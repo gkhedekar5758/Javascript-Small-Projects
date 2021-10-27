@@ -1,0 +1,164 @@
+/* style for whole body */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(33, 33, 235),rgb(123, 159, 236),lightblue);
+    background-attachment: fixed;
+    /* background-color: rgba(96, 126, 223, 0.897); */
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* this is the window which will be holding the quiz */
+.mainContent{
+    height: 30rem;
+    width: 40rem;
+    position:absolute;
+    border-radius: 5px;
+    top:50%;
+    left: 50%;
+    padding: 20px;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 8px 3px rgb(43, 70, 226);
+
+}
+/* Heading of quiz */
+.Heading{
+    position: relative;;
+    border-radius: 2px;
+    font-weight: bold;
+    left: 37%;
+}
+/* question style */
+.question p{
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    margin: 10px 0 10px 0;
+    width: 33rem;
+    height: 5rem;
+}
+.question p{
+    color: white;
+}
+/* the options syyle */
+.option{
+    width: 32rem;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    margin: 10px 0 10px 10px;
+    border-radius: 20px;
+    border-style: solid;
+    background:  rgb(69, 92, 221,0.444);
+}
+option:hover{
+    background:  rgba(2, 27, 167, 0.849);
+}
+/* button appearance */
+#nextQuestion,
+#lockAnswer{
+    border: none;
+    outline:none;
+    width:100px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: lightblue;
+    border-style: solid;
+    border-width: 2px;
+    background-color: blue;
+    color: white;
+    float: right;
+    margin-right: 1rem;
+}
+/* button hover */
+#nextQuestion:hover,
+#lockAnswer:hover{
+    background-color: rgb(51, 51, 243);
+}
+#nextQuestion[disabled]:hover,
+#lockQuestion[disabled]:hover{
+    background-color: rgb(9, 9, 48); ;
+}
+/* righ anwer-NA at this point */
+.rightAnswer{
+    animation-name: rightanswe;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rightanswe{
+    from{background-color: green;}
+    to{ background-color: rgb(115, 235, 115);}
+}
+/* to show the progress */
+.hud{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.progressContent{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.progressText{
+    font-size: 1.2em;
+    text-align: left;
+    position: absolute;
+    padding-top: 20px;
+    left: 10%;
+    top: 10%;
+}
+.scoreText{
+    font-size: 1.2em;
+    text-align: left;
+    position: absolute;
+    padding-top: 20px;
+    left: 80%;
+    top: 10%;
+}
+.pbar{
+    /* display: flex; */
+    /* position: absolute; */
+    top: 13%;
+    position: absolute;
+    left: 10%;
+    height:40px ;
+    width: 20rem;
+    border: 0.3rem solid #abafee;
+    margin-top: 1.5rem;
+    /* display: flex;
+    flex-direction: row; */
+     /* top: 40%; */
+    /*left: 30%; */
+    
+}
+.progressBar{
+    /* border-style: solid;
+    border-width: 2px;
+    border-radius: 5px; */
+    width: 0%;
+    height: 32px;
+    /* position: absolute; */
+    /* border-color: rgb(39, 39, 230); */
+    /* //position: absolute; */
+    background-color: rgb(39, 6, 230);
+}
+.masterTimer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: stretch;
+    font-size: 2rem;;
+}
+@media screen and (max-width:600px){
+    .mainContent{
+        width: 100%;
+    }
+}

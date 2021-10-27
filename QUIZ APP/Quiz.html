@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Quiz App</title>
+        <link rel="stylesheet" type="text/css" href="Quiz.css">
+    </head>
+    <body>
+        <div class="masterTimer">
+            <span></span>
+        </div>
+        <div class="progressContent">
+            <div class="hud">
+            <div class="progressText"> Question </div>
+            <div class="pbar">
+                <div class="progressBar"></div>
+            </div>
+            <div class="scoreText">Score : 0</div>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div id="game" class="justify-center flex-column">
+                <div class="Heading">Computer Quiz</div>
+                <div class="question">
+                    <p><!--Question will appear here --></p>
+                </div>
+                <div class="option"> <input type="radio" name="option" class="answer option1" id="1"><span id="opt1" style="padding-left: 10px; color: white;"></span></div>
+                <div class="option"> <input type="radio" name="option" class="answer option2" id="2"><span id="opt2" style="padding-left: 10px; color:white;"></span></div>
+                <div class="option"> <input type="radio" name="option" class="answer option3" id="3"><span id="opt3" style="padding-left: 10px; color: white;"></span></div>
+                <div class="option"> <input type="radio" name="option" class="answer option4" id="4"><span id="opt4" style="padding-left: 10px; color:white"></span></div>
+                <br>
+                <button id="lockAnswer">Lock Answer</button>
+                <button id="nextQuestion">Next Question</button>
+            </div>
+        </div>
+
+        
+        <script src="Quiz.js"></script> 
+   </body>
+</html>
