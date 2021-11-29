@@ -125,3 +125,14 @@
     display: flex;
     position: relative;
 }
+.CategoryContent{
+    display: flex;
+    position: absolute;
+    margin-top: 400%;
+    left: -50%;
+}
+.DiffContent{
+    display: flex;
+    position: absolute;
+    margin-top: 400%;
+}

@@ -27,10 +27,17 @@ h1{
     font-weight: initial;
     font-family: "Lucida Console", Courier, monospace;
 }
-p >strong{
+.message p >strong{
     font-size: 3rem;
     font-family: cursive;
 }
+.message ul{
+    list-style: none;
+    font-size: large;
+    font-weight: initial;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
 .container{
    position: absolute;
     top: 50%;

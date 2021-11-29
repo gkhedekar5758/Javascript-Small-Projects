@@ -6,15 +6,20 @@
 
 .container{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin: auto;
+    top: 30%;
+    left: 30%;
+/* align-items: center;
+justify-content: center; */
     
 }
-.box{
-    border-style: solid;   
- border-color: blue;
- border-radius: 10px;
- margin-top: 20%;
- padding:20px;
- box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+.gameParameter{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
